@@ -1,0 +1,19 @@
+
+server:
+  port: 8082
+spring:
+  #mysql驱动
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://cash.mysql.tjzsec.test.hk:3306/tjz_yunying?characterEncoding=utf-8&useSSL=false
+    username: gmgbj
+    password: G7gIVYB9Xk^7
+
+#mybatis配置
+mybatis:
+  #mapper映射
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.shitou.mybatis.model
+  #开户骆峰
+  configuration:
+    map-underscore-to-camel-case: true
